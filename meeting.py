@@ -59,10 +59,6 @@ class meeting(object):
         self.ideas.append(x0)
         # 議題は沈黙の意見だとする
         self.speaker.append(0)
-        # 会議のメンバーとして沈黙を加える
-        silent = Person(place=(0., 0.))
-        silent.ideas = [0.]
-        self.members = {0: silent}
 
     def g(self, x):
         # 発言者の物理的距離に対する関数
@@ -156,14 +152,18 @@ class meeting(object):
         plt.show()
         k = range(self.k + 1)
         plt.plot(k, self.l)
+        plt.xlabel(r"$k$")
+        plt.ylabel(r"$l$")
         plt.show()
         plt.plot(k, self.L)
+        plt.xlabel(r"$k$")
+        plt.ylabel(r"$L$")
         plt.show()
         print 'self.speaker:', self.speaker
 
     def end2(self):
         # 会議の異常終了(発言者が発言できなくなる)
-        print "no one can speak"
+        pass
 
     def init(self):
         x = [i.place[0] for i in self.members.values()]
@@ -194,15 +194,21 @@ class meeting(object):
             self.L.append(len(self.links))
             self.callback()
             if self.check_agreement():
+                print "normal end"
                 self.end()
                 break
             if not self.check_ideas():
+                print "no one can speak"
                 self.end2()
                 break
 
 if __name__ == '__main__':
     N = 6
     app = meeting(N)
+    # 会議のメンバーとして沈黙を加える
+    silent = Person(place=(0., 0.))
+    silent.ideas = [0.]
+    app.members = {0: silent}
 
     # 沈黙を中心とした円周上に等間隔で参加者が存在する
     r = 3.
