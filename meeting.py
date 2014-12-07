@@ -152,8 +152,6 @@ class meeting(object):
         plt.show()
 
         # ネットワーク図を描画
-        x = [i.place[0] for i in self.members.values()]
-        y = [i.place[1] for i in self.members.values()]
         link_s = [(self.speaker[l[0]], self.speaker[l[1]]) for l in self.links]
         counter_links = collections.Counter(link_s)
         l = np.array([[0, 1], [-1, 0]])*0.1
@@ -164,7 +162,6 @@ class meeting(object):
             jy = self.members[link[1]].place[1]
             _x, _y = ((ix+jx)/2, (iy+jy)/2)
             if link[0] == link[1]:
-                plt.text(ix, iy, '%d' % link[0], color='cyan')
                 continue
             elif link[0] < link[1]:
                 color = 'black'
@@ -173,12 +170,18 @@ class meeting(object):
                 color = 'red'
                 va = 'top'
 
-            plt.plot([ix, jx], [iy, jy], color=color, lw=lw*4/self.k)
+            plt.plot([ix, jx], [iy, jy], color=color, lw=lw*4/self.k+1)
             plt.text(_x, _y, '(%d,%d)' % (link[0], link[1]),
                      color=color, va=va)
+
         counter = collections.Counter(self.speaker)
-        size = np.array([counter[member] for member in range(self.N+1)])
-        plt.scatter(x, y, s=size*20)
+
+        for key, i in self.members.items():
+            x = i.place[0]
+            y = i.place[1]
+            size = counter[key] * 30
+            plt.scatter(x, y, s=size)
+            plt.text(x, y, str(key), color='green')
         plt.show()
 
         # 各時刻に追加されたリンク数のグラフ
@@ -195,7 +198,7 @@ class meeting(object):
         plt.show()
 
         # 時系列で発言者の表示
-        print 'self.speaker:', self.speaker
+        # print 'self.speaker:', self.speaker
 
         # 評価関数を通した結果
         print 'self.f', self.f()
@@ -212,8 +215,8 @@ class meeting(object):
         plt.draw()
 
     def callback(self):
-        print 'speaker:', self.speaker[-1]
-        print 'link:', self.l[-1]
+        # print 'speaker:', self.speaker[-1]
+        # print 'link:', self.l[-1]
         ix = self.members[self.speaker[-2]].place[0]
         iy = self.members[self.speaker[-2]].place[1]
         jx = self.members[self.speaker[-1]].place[0]
@@ -234,11 +237,11 @@ class meeting(object):
             self.L.append(len(self.links))
             self.callback()
             if self.check_agreement():
-                print "normal end"
+                print "\nnormal end"
                 self.end()
                 break
             if not self.check_ideas():
-                print "no one can speak"
+                print "\nno one can speak"
                 self.end2()
                 break
 

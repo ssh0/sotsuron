@@ -24,15 +24,17 @@ class Window(object):
         self.main = main
         self.width = 640
         self.height = 480
-        canvas = Canvas(self.root, width=self.width, height=self.height)
+        self.canvas = Canvas(self.root, width=self.width, height=self.height)
         self.var = StringVar()
-        self.oval(canvas, N)
-        canvas.bind('<Motion>', self.pointer)
-        canvas.pack()
+        self.oval(self.canvas, N)
+        self.canvas.bind('<Motion>', self.pointer)
+        self.canvas.pack()
         label = Label(self.root, textvariable=self.var, font='Ubuntu 9')
         label.pack()
         b1 = Button(self.root, text='start', command=self.b1_clicked)
         b1.pack()
+        b2 = Button(self.root, text='save', command=self.b2_clicked)
+        b2.pack()
 
     def oval(self, canvas, N=6):
         self.members = dict()
@@ -60,6 +62,25 @@ class Window(object):
             y = (self.members[n].y-self.centery)/float(self.r)
             self.main.members[n] = meeting.Person(place=(x, y))
         self.main.progress()
+
+    def b2_clicked(self):
+        import tkFileDialog
+        import os
+
+        fTyp = [('eps file', '*.eps'), ('all files', '*')]
+        filename = tkFileDialog.asksaveasfilename(filetypes=fTyp,
+                                                  initialdir=os.getcwd(),
+                                                  initialfile='figure_1.eps')
+
+        if filename is None:
+            return
+        try:
+            self.canvas.postscript(file=filename)
+        except TclError:
+            print """
+            TclError: Cannot save the figure.
+            Canvas Window must be alive for save."""
+            return 1
 
     def display(self):
         self.root.mainloop()
