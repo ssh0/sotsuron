@@ -74,7 +74,6 @@ class Oval:
         self.var = var
         self.tag = str(id)
         self.c.create_oval(x-r, y-r, x+r, y+r, outline='', fill='#069', tags=self.tag)
-        self.c.create_text(x, y, text=self.tag, tags=self.tag)
 
         self.c.tag_bind(self.tag, '<Button-1>', self.pressed)
         self.c.tag_bind(self.tag, '<Button1-Motion>', self.dragging)

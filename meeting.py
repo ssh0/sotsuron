@@ -5,7 +5,7 @@
 
 import matplotlib.pyplot as plt
 import numpy as np
-import time
+import collections
 import operator
 
 def accumulate(iterable, func=operator.add):
@@ -150,16 +150,55 @@ class meeting(object):
         # 会議の通常終了、各定義量の計算や受け渡しなどはここで
         plt.ioff()
         plt.show()
+
+        # ネットワーク図を描画
+        x = [i.place[0] for i in self.members.values()]
+        y = [i.place[1] for i in self.members.values()]
+        link_s = [(self.speaker[l[0]], self.speaker[l[1]]) for l in self.links]
+        counter_links = collections.Counter(link_s)
+        l = np.array([[0, 1], [-1, 0]])*0.1
+        for link, lw in counter_links.items():
+            ix = self.members[link[0]].place[0]
+            iy = self.members[link[0]].place[1]
+            jx = self.members[link[1]].place[0]
+            jy = self.members[link[1]].place[1]
+            _x, _y = ((ix+jx)/2, (iy+jy)/2)
+            if link[0] == link[1]:
+                plt.text(ix, iy, '%d' % link[0], color='cyan')
+                continue
+            elif link[0] < link[1]:
+                color = 'black'
+                va = 'bottom'
+            else:
+                color = 'red'
+                va = 'top'
+
+            plt.plot([ix, jx], [iy, jy], color=color, lw=lw*4/self.k)
+            plt.text(_x, _y, '(%d,%d)' % (link[0], link[1]),
+                     color=color, va=va)
+        counter = collections.Counter(self.speaker)
+        size = np.array([counter[member] for member in range(self.N+1)])
+        plt.scatter(x, y, s=size*20)
+        plt.show()
+
+        # 各時刻に追加されたリンク数のグラフ
         k = range(self.k + 1)
         plt.plot(k, self.l)
         plt.xlabel(r"$k$")
         plt.ylabel(r"$l$")
         plt.show()
+
+        # リンク数の累積グラフ
         plt.plot(k, self.L)
         plt.xlabel(r"$k$")
         plt.ylabel(r"$L$")
         plt.show()
+
+        # 時系列で発言者の表示
         print 'self.speaker:', self.speaker
+
+        # 評価関数を通した結果
+        print 'self.f', self.f()
 
     def end2(self):
         # 会議の異常終了(発言者が発言できなくなる)
@@ -180,8 +219,9 @@ class meeting(object):
         jx = self.members[self.speaker[-1]].place[0]
         jy = self.members[self.speaker[-1]].place[1]
         plt.plot([ix, jx], [iy, jy])
+        plt.text((ix+jx)/2, (iy+jy)/2, '%d:(%d,%d)'
+                 % (self.k, self.speaker[-2], self.speaker[-1]))
         plt.draw()
-        # time.sleep(0.5)
 
     def progress(self):
         self.init()
