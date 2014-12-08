@@ -22,7 +22,7 @@ def accumulate(iterable, func=operator.add):
 
 class Person(object):
 
-    def __init__(self, ideas_num=10, place=(0., 0.), **kwargs):
+    def __init__(self, ideas_num=30, place=(0., 0.), **kwargs):
         # 意見は0~1の間の値を一様に取りうる
         self.ideas = list(np.random.random(ideas_num))
         # 発言者の実際の位置が2次元の座標として表せる
@@ -250,7 +250,11 @@ if __name__ == '__main__':
     app = meeting(N)
     # 会議のメンバーとして沈黙を加える
     silent = Person(place=(0., 0.))
-    silent.ideas = [0.]
+    silent.ideas = [0.5]
+    def distance_silent(p):
+        d = 2.
+        return d
+    silent.distance = distance_silent
     app.members = {0: silent}
 
     # 沈黙を中心とした円周上に等間隔で参加者が存在する

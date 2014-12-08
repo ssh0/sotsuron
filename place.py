@@ -30,11 +30,11 @@ class Window(object):
         self.canvas.bind('<Motion>', self.pointer)
         self.canvas.pack()
         label = Label(self.root, textvariable=self.var, font='Ubuntu 9')
-        label.pack()
+        label.pack(side='left')
         b1 = Button(self.root, text='start', command=self.b1_clicked)
-        b1.pack()
+        b1.pack(side='right')
         b2 = Button(self.root, text='save', command=self.b2_clicked)
-        b2.pack()
+        b2.pack(side='right')
 
     def oval(self, canvas, N=6):
         self.members = dict()
@@ -55,7 +55,11 @@ class Window(object):
 
     def b1_clicked(self):
         silent = meeting.Person(place=(0., 0.))
-        silent.ideas = [0.]
+        silent.ideas = [0.5]
+        def distance_silent(p):
+            d = 10.
+            return d
+        silent.distance = distance_silent
         self.main.members = {0: silent, }
         for n in range(1, self.main.N+1):
             x = (self.members[n].x-self.centerx)/float(self.r)
