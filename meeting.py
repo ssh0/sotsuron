@@ -152,7 +152,7 @@ class meeting(object):
         plt.show()
 
         # ネットワーク図を描画
-        link_s = [(self.speaker[l[0]], self.speaker[l[1]]) for l in self.links]
+        link_s = [(a, b) for a, b in zip(self.speaker[:-1], self.speaker[1:])]
         counter_links = collections.Counter(link_s)
         l = np.array([[0, 1], [-1, 0]])*0.1
         for link, lw in counter_links.items():
@@ -185,14 +185,16 @@ class meeting(object):
         plt.show()
 
         # 各時刻に追加されたリンク数のグラフ
-        k = range(self.k + 1)
+        k = np.arange(self.k + 1)
         plt.plot(k, self.l)
+        plt.plot(k, (-self.radius**2 + 2*self.radius)*k)
         plt.xlabel(r"$k$")
         plt.ylabel(r"$l$")
         plt.show()
 
         # リンク数の累積グラフ
         plt.plot(k, self.L)
+        plt.plot(k, (-self.radius**2 + 2*self.radius)*k**2/2.)
         plt.xlabel(r"$k$")
         plt.ylabel(r"$L$")
         plt.show()
