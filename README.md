@@ -37,7 +37,11 @@
 
 - 参加者のつくるネットワーク([person_network](simple2/person_network.ipynb))
 
+<<<<<<< HEAD
 - 意見のつくるネットワークについての再考
+=======
+- 意見のつくるネットワークについての再考()
+>>>>>>> fc8226fcc9f69db44d458db65eba9638806c61e5
 
 ## Author
 
