@@ -1,3 +1,12 @@
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: { inlineMath: [['$','$'], ["\\(","\\)"]] } });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
+</script>
+<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
+
+
 卒論
 ========
 
@@ -27,6 +36,8 @@
         - 各時刻$k$において張られるリンクの数の$r$依存性などに対する計算
 
 - 参加者のつくるネットワーク([person_network](simple2/person_network.ipynb))
+
+- 意見のつくるネットワークについての再考
 
 ## Author
 
