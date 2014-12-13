@@ -28,6 +28,8 @@
 
 - 参加者のつくるネットワーク([person_network](simple2/person_network.ipynb))
 
+- 意見のつくるネットワークについての再考()
+
 ## Author
 
 [ssh0](https://github.com/ssh0)
