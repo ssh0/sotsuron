@@ -4,7 +4,6 @@
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML">
 </script>
-<meta http-equiv="X-UA-Compatible" CONTENT="IE=EmulateIE7" />
 
 
 卒論
