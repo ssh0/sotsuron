@@ -1,4 +1,6 @@
-卒論
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
+
+<i class="fa fa-file" style="font-size:1em;"></i>卒論
 ========
 
 卒論に向けた試行錯誤
