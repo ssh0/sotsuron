@@ -171,6 +171,6 @@ class Meeting:
             plugins.connect(
                 self.fig, plugins.InteractiveLegendPlugin(
                     self.s1, self.labels, ax=self.ax))
-            mpld3.enable_notebook()
+            mpld3.display()
         else:
             print meeting.minutes
