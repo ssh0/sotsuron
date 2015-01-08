@@ -1,0 +1,19 @@
+C. R. White, P. Cassey, T. M. Blackburn, Allometric exponents do not support a universal metabolic allometry, Ecology, 88(2), 315-323 (2007).
+
+J. Kozlowski, J. Weiner, Interspecific allometries are by-products of body size optimization, The American Naturalist, 149(2) (1997).
+
+G. B. West, J. H. Brown, Life's universal scaling laws, Physics Today, 57, 36-49 (2004).
+
+H. A. Feldman, T. A. Mcmahon, The ¾ mass exponent for energy metabolism is not a statistical artifact, Respiration Physiology, 52, 149-163, (1983).
+
+G. B. West, J. H. Brown, The origin of allometric scaling laws in biology from genomes to ecosystems towards a quantitative unifying theory of biological structure and organization, The Journal of Experimental Biology, 208, 1575-1592 (2005).
+
+V. M. Savage, J. F. Gilloly, W. H. Woodruff, G. B. West, A. P. Allen, B. J. Enquist, J. H. Erown, The predominance of quoter-power scaling in biology, Functional Ecology, 18, 257-282 (2004).
+
+石川 正純・足立 にれか・岡本 浩一,会議分析のための数値シミュレーション技法-組織内集団に見られる意思決定モデルの開発-, 社会技術研究論文集, 2004.
+
+城 綾実・細馬 宏通, 多人数会話における自発的ジェスチャーの同期, Congnitive Studies, **16**(1), 103-119, 2009.
+
+藤本 学・大坊 郁夫, 小集団の会話の展開に及ぼす会話者の発話行動傾向の影響, The Japanese Journal of Experimental Social Psychology, **47**(1), 51-60, 2007.
+
+高良 美樹, 集団討議の参加者の人数が集団決定および個人決定に及ぼす影響について, 人間科学, **1**, 67-84, 1998.
