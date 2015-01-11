@@ -89,13 +89,6 @@ class Meeting:
         preidea = self.subject
         prepreidea = None
         self.k = 1
-        
-#        if self.case == 2 or 3:
-#            def chose_idea_for_case():
-#                return person.chose_idea(prei)
-#        elif self.case == 4 or 5:
-#            def chose_idea_for_case():
-#               return person.chose_idea(preidea, prepreidea)
             
         while self.k < self.K + 1:
             # l: (distance, speaker, idea_id) list for who can speak
@@ -176,4 +169,4 @@ class Meeting:
                     self.s1, self.labels, ax=self.ax))
             mpld3.show()
         else:
-            print meeting.minutes
+            pass
