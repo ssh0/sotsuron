@@ -1,0 +1,7 @@
+\BOOKMARK [1][-]{section.1}{導入}{}% 1
+\BOOKMARK [1][-]{section.2}{モデルの説明}{}% 2
+\BOOKMARK [1][-]{section.3}{各モデルにおける結果と考察}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Xiを等確率で選び、その中からxが一様に選ばれる場合}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{Xiを一つ前のXjによって決まる確率で選び、その中から点xが一様に選ばれる場合}{section.3}% 5
+\BOOKMARK [1][-]{section.4}{結論}{}% 6
+\BOOKMARK [1][-]{section.5}{参考文献}{}% 7
