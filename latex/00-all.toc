@@ -3,5 +3,7 @@
 \contentsline {section}{\numberline {3}各モデルにおける結果と考察}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}$X_{i}$を等確率で選び、その中から$x$が一様に選ばれる場合}{7}{subsection.3.1}
 \contentsline {subsection}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{10}{subsection.3.2}
-\contentsline {section}{\numberline {4}結論}{13}{section.4}
-\contentsline {section}{\numberline {5}参考文献}{13}{section.5}
+\contentsline {subsection}{\numberline {3.3}過去の点$x$を参照にして次の点を選択する場合}{13}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合}{14}{subsubsection.3.3.1}
+\contentsline {section}{\numberline {4}結論}{15}{section.4}
+\contentsline {section}{\numberline {5}参考文献}{15}{section.5}
