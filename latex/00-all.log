@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  31 JAN 2015 01:58
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  31 JAN 2015 03:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -460,10 +460,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
 File: ../img/figure2.jpg Graphic file (type bmp)
-<../img/figure2.jpg> [13] [14]) (./03-2-B.tex) (./03-2-C.tex) (./03-3.tex))
-(./04-conclusion.tex) (./05-reference.tex)
+<../img/figure2.jpg> [13] [14]) (./03-2-B.tex
+File: ../simple3/case_2.jpg Graphic file (type bmp)
+ <../simple3/case_2.jpg> [15]
+File: ../simple3/case_3.jpg Graphic file (type bmp)
+
+<../simple3/case_3.jpg>) (./03-2-C.tex [16]) (./03-3.tex)) (./04-conclusion.tex
+) (./05-reference.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
- [15]
+ [17]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./00-all.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27.
@@ -471,12 +476,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 27.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 5804 strings out of 495129
- 81898 string characters out of 6182595
- 168108 words of memory out of 5000000
- 9050 multiletter control sequences out of 15000+600000
+ 5811 strings out of 495129
+ 81988 string characters out of 6182595
+ 168229 words of memory out of 5000000
+ 9054 multiletter control sequences out of 15000+600000
  20107 words of font info for 91 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  29i,12n,31p,1583b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (15 pages, 51476 bytes).
+Output written on 00-all.dvi (17 pages, 55324 bytes).
