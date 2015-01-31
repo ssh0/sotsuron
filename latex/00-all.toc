@@ -2,9 +2,10 @@
 \contentsline {section}{\numberline {2}モデルの説明}{4}{section.2}
 \contentsline {section}{\numberline {3}各モデルにおける結果と考察}{7}{section.3}
 \contentsline {subsection}{\numberline {3.1}$X_{i}$を等確率で選び、その中から$x$が一様に選ばれる場合}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}過去の点$x$を参照にして次の点を選択する場合}{13}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合}{14}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合}{15}{subsubsection.3.3.2}
-\contentsline {section}{\numberline {4}結論}{17}{section.4}
-\contentsline {section}{\numberline {5}参考文献}{17}{section.5}
+\contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合 (case 1)}{14}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合}{14}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合}{16}{subsubsection.3.3.3}
+\contentsline {section}{\numberline {4}結論}{18}{section.4}
+\contentsline {section}{\numberline {5}参考文献}{18}{section.5}
