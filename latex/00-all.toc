@@ -7,5 +7,7 @@
 \contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合 (case 1)}{14}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合}{14}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合}{16}{subsubsection.3.3.3}
-\contentsline {section}{\numberline {4}結論}{18}{section.4}
-\contentsline {section}{\numberline {5}参考文献}{18}{section.5}
+\contentsline {subsubsection}{\numberline {3.3.4}結果と考察}{18}{subsubsection.3.3.4}
+\contentsline {section}{\numberline {4}近距離の点をクラスター化するモデル}{18}{section.4}
+\contentsline {section}{\numberline {5}結論}{19}{section.5}
+\contentsline {section}{\numberline {6}参考文献}{19}{section.6}

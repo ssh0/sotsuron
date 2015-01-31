@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  31 JAN 2015 17:47
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  31 JAN 2015 23:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -471,23 +471,43 @@ File: ../simple3/case_4.jpg Graphic file (type bmp)
  <../simple3/case_4.jpg>
 File: ../simple3/case_5.jpg Graphic file (type bmp)
 
-<../simple3/case_5.jpg>) (./03-3.tex [17])) (./04-conclusion.tex)
-(./05-reference.tex)
+<../simple3/case_5.jpg> [17]
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 32.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 32.
+
+
+LaTeX Warning: Reference `fig:f13' on page 18 undefined on input line 32.
+
+
+LaTeX Warning: Reference `fig:f14' on page 18 undefined on input line 32.
+
+) (./03-3.tex)) (./04-conclusion.tex) (./05-reference.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
- [18]
+ [18] [19]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
- (./00-all.aux)
+
+(./00-all.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 27.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 27.
  ) 
 Here is how much of TeX's memory you used:
- 5817 strings out of 495129
- 82068 string characters out of 6182595
+ 5823 strings out of 495129
+ 82135 string characters out of 6182595
  168357 words of memory out of 5000000
- 9058 multiletter control sequences out of 15000+600000
- 20107 words of font info for 91 fonts, out of 8000000 for 9000
+ 9063 multiletter control sequences out of 15000+600000
+ 20415 words of font info for 92 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  29i,12n,31p,1583b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (18 pages, 59260 bytes).
+Output written on 00-all.dvi (19 pages, 62404 bytes).
