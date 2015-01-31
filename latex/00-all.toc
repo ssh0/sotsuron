@@ -5,9 +5,9 @@
 \contentsline {subsection}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{9}{subsection.3.2}
 \contentsline {subsection}{\numberline {3.3}過去の点$x$を参照にして次の点を選択する場合}{13}{subsection.3.3}
 \contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合 (case 1)}{14}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合}{14}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合}{16}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合 (case 2, case 3)}{14}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合(case 4, case 5)}{16}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}結果と考察}{18}{subsubsection.3.3.4}
-\contentsline {section}{\numberline {4}近距離の点をクラスター化するモデル}{18}{section.4}
-\contentsline {section}{\numberline {5}結論}{19}{section.5}
-\contentsline {section}{\numberline {6}参考文献}{19}{section.6}
+\contentsline {subsection}{\numberline {3.4}近距離の点をクラスター化するモデル}{20}{subsection.3.4}
+\contentsline {section}{\numberline {4}結論}{25}{section.4}
+\contentsline {section}{\numberline {5}参考文献}{25}{section.5}
