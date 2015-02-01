@@ -9,5 +9,5 @@
 \contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合(case 4, case 5)}{16}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}結果と考察}{18}{subsubsection.3.3.4}
 \contentsline {subsection}{\numberline {3.4}近距離の点をクラスター化するモデル}{20}{subsection.3.4}
-\contentsline {section}{\numberline {4}結論}{25}{section.4}
-\contentsline {section}{\numberline {5}参考文献}{25}{section.5}
+\contentsline {section}{\numberline {4}結論}{33}{section.4}
+\contentsline {section}{\numberline {5}参考文献}{33}{section.5}
