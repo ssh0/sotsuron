@@ -1,14 +1,14 @@
-\contentsline {section}{\numberline {1}導入}{3}{section.1}
-\contentsline {section}{\numberline {2}モデルの説明}{4}{section.2}
-\contentsline {section}{\numberline {3}各モデルにおける結果と考察}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}$X_{i}$を等確率で選び、その中から$x$が一様に選ばれる場合}{7}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{9}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}過去の点$x$を参照にして次の点を選択する場合}{13}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}過去の点の影響を受けない場合 (case 1)}{14}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}1つ前の点を参照する場合 (case 2, case 3)}{14}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}二つの点を参照して次の点を選択する場合(case 4, case 5)}{16}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}結果と考察}{18}{subsubsection.3.3.4}
-\contentsline {subsection}{\numberline {3.4}近距離の点をクラスター化するモデル}{20}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}解析的な計算}{26}{subsubsection.3.4.1}
-\contentsline {section}{\numberline {4}結論}{33}{section.4}
-\contentsline {section}{\numberline {5}参考文献}{33}{section.5}
+\contentsline {chapter}{\numberline {第1章}導入}{1}{chapter.1}
+\contentsline {chapter}{\numberline {第2章}モデルの説明}{3}{chapter.2}
+\contentsline {chapter}{\numberline {第3章}各モデルにおける結果と考察}{6}{chapter.3}
+\contentsline {section}{\numberline {3.1}$X_{i}$を等確率で選び、その中から$x$が一様に選ばれる場合}{6}{section.3.1}
+\contentsline {section}{\numberline {3.2}$X_{i}$を一つ前の$X_{j}$によって決まる確率で選び、その中から点$x$が一様に選ばれる場合}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}過去の点$x$を参照にして次の点を選択する場合}{12}{section.3.3}
+\contentsline {subsubsection}{過去の点の影響を受けない場合 (case 1)}{14}{section*.2}
+\contentsline {subsection}{\numberline {3.3.1}1つ前の点を参照する場合 (case 2, case 3)}{14}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}二つの点を参照して次の点を選択する場合(case 4, case 5)}{16}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}結果と考察}{18}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}近距離の点をクラスター化するモデル}{20}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}解析的な計算}{28}{subsection.3.4.1}
+\contentsline {chapter}{\numberline {第4章}結論}{37}{chapter.4}
+\contentsline {chapter}{\numberline {第5章}参考文献}{38}{chapter.5}

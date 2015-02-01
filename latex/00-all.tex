@@ -1,10 +1,12 @@
-\documentclass{jsarticle}
-\usepackage{moreverb}
+\documentclass[a4j,11pt,onecolumn,oneside,openany]{jsbook}
 \usepackage[dvipdfmx]{graphicx}
 \usepackage[dvipdfmx]{hyperref}
 \usepackage{float}
 \usepackage{amsmath}
 \usepackage{amssymb}
+
+\setlength{\textwidth}{\fullwidth}
+\setlength{\evensidemargin}{\oddsidemargin}
 
 \usepackage{atbegshi}
 \ifnum 42146=\euc"A4A2 \AtBeginShipoutFirst{\special{pdf:tounicode EUC-UCS2}}\else
@@ -12,13 +14,22 @@
 
 \title{効率とシステムサイズの関係に関する確率モデルによる考察}
 \author{早稲田大学先進理工学部物理学科 4年 藤本將太郎(1Y11A045-8)}
-\date{\today}
-
+\voffset=-13mm
+\hoffset=-8mm
 \begin{document}
+\begin{titlepage}
 \maketitle
+\thispagestyle{empty}
+\end{titlepage}
+\newpage
+\pagenumbering{roman}
+\begin{abstract}
+\input{00-abstract}
+\end{abstract}
 \newpage
 \tableofcontents
 \newpage
+\pagenumbering{arabic}
 \input{01-introduction}
 \input{02-model}
 \input{03-result}
