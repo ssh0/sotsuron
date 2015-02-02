@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  2 FEB 2015 13:54
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  2 FEB 2015 16:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -426,12 +426,13 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-File: ../simple1/simple001_1.jpg Graphic file (type bmp)
-<../simple1/simple001_1.jpg> [6
+[6
 
 ]
+File: ../simple1/simple001_1.jpg Graphic file (type bmp)
+ <../simple1/simple001_1.jpg>
 File: ../img/fig3.png Graphic file (type bmp)
- <../img/fig3.png> [7]) (./03-1-B.tex
+ <../img/fig3.png> [7] [8]) (./03-1-B.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -464,32 +465,34 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
-[8] [9]
+[9]
 File: ../download2_2.png Graphic file (type bmp)
- <../download2_2.png>
+ <../download2_2.png> [10]
 File: ../download2_3.png Graphic file (type bmp)
  <../download2_3.png>
 File: ../download2_4.png Graphic file (type bmp)
- <../download2_4.png> [10]
+ <../download2_4.png>
+[11]
 File: ../download2_5.png Graphic file (type bmp)
-
-<../download2_5.png> [11]) (./03-2-A.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1.
-
+ <../download2_5.png>) (./03-2-A.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
 
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 1.
+
+[12]
 File: ../img/figure2.jpg Graphic file (type bmp)
-<../img/figure2.jpg> [12] [13]) (./03-2-B.tex
+ <../img/figure2.jpg> [13]) (./03-2-B.tex
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 1.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 1.
+ [14]
 File: ../simple3/case_2.jpg Graphic file (type bmp)
- <../simple3/case_2.jpg> [14]
+ <../simple3/case_2.jpg>
 File: ../simple3/case_3.jpg Graphic file (type bmp)
 
 <../simple3/case_3.jpg>) (./03-2-C.tex [15] [16]
@@ -502,48 +505,48 @@ File: ../img/simple3_N_2.png Graphic file (type bmp)
  <../img/simple3_N_2.png>
 File: ../img/simple3_N_2_fit.png Graphic file (type bmp)
 
-<../img/simple3_N_2_fit.png> [18] [19]) (./03-3.tex [20]
+<../img/simple3_N_2_fit.png> [18]) (./03-3.tex [19] [20]
 File: ../img/cluster.png Graphic file (type bmp)
  <../img/cluster.png>
-[21]
 File: ../img/r_phi_1.png Graphic file (type bmp)
- <../img/r_phi_1.png>
+
+<../img/r_phi_1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 5.76599pt on input line 28.
- [22]
+ [21]
 File: ../img/r_phi_1_power.png Graphic file (type bmp)
- <../img/r_phi_1_power.png> [23]
+ <../img/r_phi_1_power.png> [22]
 File: ../img/r_phi_1_sigmoid.png Graphic file (type bmp)
 
-<../img/r_phi_1_sigmoid.png> [24] (./03-3-1.tex [25]
+<../img/r_phi_1_sigmoid.png> [23] (./03-3-1.tex
 File: ../img/S_phi_1.png Graphic file (type bmp)
- <../img/S_phi_1.png>
-[26] [27]
+ <../img/S_phi_1.png> [24]
+[25]
 File: ../img/omega.jpg Graphic file (type bmp)
- <../img/omega.jpg> [28]
+ <../img/omega.jpg>
 File: ../img/omega_x.jpg Graphic file (type bmp)
- <../img/omega_x.jpg>
+ <../img/omega_x.jpg> [26]
 File: ../img/omega_xy.jpg Graphic file (type bmp)
  <../img/omega_xy.jpg>
-[29] [30] [31] [32]
+[27] [28] [29]
 Overfull \hbox (19.79446pt too wide) in paragraph at lines 153--153
 [] 
  []
 
-[33]
+[30]
 File: ../img/r_l.png Graphic file (type bmp)
- <../img/r_l.png>) (./03-3-2.tex [34]
-File: ../img/N_l.png Graphic file (type bmp)
- <../img/N_l.png> [35])))
-(./04-conclusion.tex [36]
+ <../img/r_l.png>) (./03-3-2.tex [31]
+File: ../img/N_l_2.png Graphic file (type bmp)
+ <../img/N_l_2.png> [32])))
+(./04-conclusion.tex [33]
 第4章
-) (./05-reference.tex [37
+) (./05-reference.tex [34
 
 ]
 第5章
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
- [38
+ [35
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
@@ -554,11 +557,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
  5850 strings out of 495129
- 82269 string characters out of 6182595
+ 82273 string characters out of 6182595
  180565 words of memory out of 5000000
  9076 multiletter control sequences out of 15000+600000
  24185 words of font info for 110 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 29i,12n,31p,1583b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,12n,31p,1560b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (41 pages, 112968 bytes).
+Output written on 00-all.dvi (38 pages, 115628 bytes).
