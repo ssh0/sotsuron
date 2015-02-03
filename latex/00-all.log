@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  3 FEB 2015 21:36
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  4 FEB 2015 02:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -508,11 +508,12 @@ File: ../img/simple3_N_2_fit.png Graphic file (type bmp)
 <../img/simple3_N_2_fit.png> [19]) (./03-3.tex (./03-3-1.tex [20]
 File: ../img/cluster.png Graphic file (type bmp)
 
-<../img/cluster.png> [21]
+<../img/cluster.png>
 File: ../img/r_phi_1.png Graphic file (type bmp)
  <../img/r_phi_1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 28.
+(Font)              scaled to size 5.76599pt on input line 26.
+ [21]
 File: ../img/r_phi_1_power.png Graphic file (type bmp)
  <../img/r_phi_1_power.png>
 [22]
@@ -527,14 +528,16 @@ File: ../img/omega_x.jpg Graphic file (type bmp)
  <../img/omega_x.jpg> [26]
 File: ../img/omega_xy.jpg Graphic file (type bmp)
  <../img/omega_xy.jpg>
-[27] [28] [29]
-Overfull \hbox (19.79446pt too wide) in paragraph at lines 144--144
+[27] [28]
+File: ../img/omega_xy_1.png Graphic file (type bmp)
+ <../img/omega_xy_1.png> [29] [30]
+Overfull \hbox (19.79446pt too wide) in paragraph at lines 165--165
 [] 
  []
 
-[30]
+[31]
 File: ../img/r_l.png Graphic file (type bmp)
- <../img/r_l.png>) (./03-3-3.tex [31]
+ <../img/r_l.png>) (./03-3-3.tex
 File: ../img/N_l_2.png Graphic file (type bmp)
  <../img/N_l_2.png> [32])))
 (./04-conclusion.tex [33]
@@ -551,12 +554,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 5853 strings out of 495129
- 82301 string characters out of 6182595
- 180561 words of memory out of 5000000
- 9076 multiletter control sequences out of 15000+600000
+ 5862 strings out of 495129
+ 82395 string characters out of 6182595
+ 181838 words of memory out of 5000000
+ 9084 multiletter control sequences out of 15000+600000
  24185 words of font info for 110 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  29i,12n,31p,1560b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (37 pages, 117476 bytes).
+Output written on 00-all.dvi (37 pages, 120860 bytes).

@@ -1,9 +1,7 @@
 \subsection{解析的な計算}
-以下に示すのは,これまで調べてきた性質が,解析的な計算によって求められないかと考えて行った試行である。
+以下には,解析的な計算によってクラスターの次数などが求められないかと考えて行った計算の過程を記しておく。基本的には初等的な積分の計算を行っているのみである。
 
-まず,点の分布する範囲は$\Omega = [0,1]\times [0,1]$であり,この中の面積$S$の領域の中に点を見出す確率は$S$である。
-
-次に,領域内のある点$\vec x=(x,y)$を中心として半径$r$($0 < r \le 0.5$)の領域$B(\vec x, r)$内に点を見出す確率$p(\vec x)$は,境界の影響をうけない領域($\Omega ' = \{(x,y) | r \le x \le 1-r, r \le y \le 1-r \}$)では$\pi r^{2}$であり,境界の影響を受ける領域($\Omega'' = \Omega / \Omega'$)において点を見出す確率は,領域を
+まず,点の分布する範囲は$\Omega = [0,1]\times [0,1]$で,この中の面積$S$の領域の中に点を見出す確率は$S$である。領域内のある点$\vec x=(x,y)$を中心として半径$r$($0 < r \le 0.5$)の領域$B(\vec x, r)$内に点を見出す確率$p(\vec x)$は,境界の影響をうけない領域($\Omega ' = \{(x,y) | r \le x \le 1-r, r \le y \le 1-r \}$)では$\pi r^{2}$であり,境界の影響を受ける領域($\Omega'' = \Omega / \Omega'$)において点を見出す確率は,領域を
 \begin{align}
 \Omega''_{x} &= \{(x,y) | 0 \le x < r, r< y < 1-r\}\nonumber \\
 \Omega''_{1-x} &= \{(x,y) | 1-r < x \le 1, r< y < 1-r\}\nonumber \\
@@ -22,8 +20,9 @@
         \label{fig:f20}
     \end{center}
 \end{figure}
-$\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},また$\Omega''_{i,j} = \{\Omega''_{x,y}, \Omega''_{1-x,y}, \Omega''_{x,1-y}, \Omega''_{1-x,1-y}\}$でまとめて書くことにすると,
+$\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},また$\Omega''_{i,j} = \{\Omega''_{x,y}, \Omega''_{1-x,y}, \Omega''_{x,1-y}, \Omega''_{1-x,1-y}\}$でまとめて書くことにして,中心の点$\vec{x}$が領域$\Omega''_{i}$にあるときに半径$r$によって作られる円の面積$p(r)_{\Omega''_{i}}$は,図\ref{fig:f21}で表すように
 \[p(r)_{\Omega''_{i}} = i \sqrt{r^{2}-i^{2}} + r^{2} \left[ \pi -\arccos \frac{i}{r} \right]\]
+として求めることができる。ここで$i$は$x$,$1-x$,$y$,$1-y$を表している。
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=10cm]{../img/omega_x.jpg}
@@ -31,6 +30,7 @@ $\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},
         \label{fig:f21}
     \end{center}
 \end{figure}
+中心点が領域$\Omega''_{i,j}$にあるときに,半径$r$によって作られる領域の面積は,図\ref{fig:f22}の例に示すように領域を分割して考えれば,
 \begin{align}p(r)_{\Omega''_{i,j}} = &\frac{1}{2}\left\{ \sqrt{r^{2}-i^{2}} + \min \left(j, \sqrt{r^{2}-i^{2}}\right) \right\}i + \frac{1}{2}\left\{ \sqrt{r^{2}-j^{2}} + \min \left( i, \sqrt{r^{2}-j^{2}}\right) \right\}j \nonumber \\
 &+ \frac{1}{2}r^{2} \left\{ 2\pi -\arccos \frac{i}{r}-\arccos \frac{j}{r}-\min \left( \frac{\pi}{2}, \arccos \frac{i}{r} +\arccos \frac{j}{r} \right) \right\}
 \end{align}
@@ -43,15 +43,24 @@ $\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},
     \end{center}
 \end{figure}
 
-確率$p$をすべての領域について積分した値は,領域$\Omega$から一様乱数によって一つの点を選び,その点を中心とした$r$による範囲に1つの点を見出す確率の期待値となる。
-この確率を$p'(r)$とし,$0\le r \le 0.5$のときは
+このようにして求めた確率$p$をすべての領域について積分した値は,領域$\Omega$から一様乱数によって一つの点を選び,その点を中心とした$r$による範囲に1つの点を見出す確率の期待値となる。
+この確率を$p'(r)$とすれば,それぞれの領域で積分をした値の和をとれば良いので,$0\le r \le 0.5$のとき
 \[p'(r) = p'(r)_{\Omega''} + 4p'(r)_{\Omega''_{i}} + 4p'(r)_{\Omega''_{i,j}}\]
-とできる。それぞれの領域について積分を実行する。
-\[p'(r)_{\Omega'} = \int_{r}^{1-r} \int_{r}^{1-r}\pi r^{2}\mathrm{d}x\mathrm{d}y = (1-2r)^{2}\pi r^{2}\]
+とできる。以降ではそれぞれの領域について積分を実行する。
+
+まず領域$\Omega' = [r, 1-r]\times [r , 1-r]$について積分を実行すれば,
+\begin{equation}
+p'(r)_{\Omega'} = \int_{r}^{1-r} \int_{r}^{1-r}\pi r^{2}\mathrm{d}x\mathrm{d}y = (1-2r)^{2}\pi r^{2}
+\label{eq:e10}
+\end{equation}
+が得られる。
+
+次に領域$\Omega''_{i}$について積分したものを考える。このときそれぞれ4つの領域は対称であるので,積分して得られた値は等しくなるため,$\Omega''_{x}$だけ考えれば良いことが分かる。
 \begin{align}
 p'(r)_{\Omega'_{i}} = p'(r)_{\Omega'_{x}} &= \int_{0}^{r} \int_{r}^{1-r}\mathrm{d}x\mathrm{d}y\ x\sqrt{r^{2}-x^{2}} + r^{2}\left[\pi - \arccos\frac{x}{r}\right]\nonumber \\
 &= (1-2r)\left\{ \frac{r^{3}}{3} + r^{2}\pi\cdot r - r^{2}\cdot r \right\}\nonumber \\
 &= (1-2r)r^{3}\left( \pi-\frac{2}{3} \right)
+\label{eq:e11}
 \end{align}
 
 NOTE1:
@@ -75,9 +84,8 @@ $t = \arccos x$であるから,
 したがって,
 \begin{align}
 \int \arccos x \mathrm{d}x\  &= x\arccos x + \int \frac{x}{\sqrt{1-x^{2}}}\mathrm{d}x\nonumber \\
-&=x\arccos x - \sqrt{1-x^{2}} + C
+&=x\arccos x - \sqrt{1-x^{2}} + C\ \ \ \ \ (C\text{は積分定数})
 \end{align}
-($C$は積分定数)
 
 今の場合,
 \begin{align}
@@ -86,19 +94,30 @@ $t = \arccos x$であるから,
 &= r ( 1\arccos1 -\sqrt{1-1} - 0 \arccos0 + \sqrt{1-0})\nonumber \\
 &= r
 \end{align}
+と計算できる。
 
-$p'(r)_{\Omega''_{i,j}}$を以下のように分解してそれぞれ計算する。
+次に,$p'(r)_{\Omega''_{i,j}}$を図\ref{fig:omega}のように分解してそれぞれ計算する。領域$\Omega''_{x, y}1'$は$\Omega''_{x,y}$と同じ領域であり,$\Omega''_{x, y}1''$は$\Omega''_{x,y}2$と同じ積分領域である。
 \begin{align}
 p'(r)_{\Omega''_{i,j}} &= p'(r)_{\Omega''_{x, y}}\nonumber \\
 &= p'(r)_{\Omega''_{x, y}1}  +p'(r)_{\Omega''_{x, y}2}\nonumber \\
 &= p'(r)_{\Omega''_{x, y}1'} - p'(r)_{\Omega''_{x, y}1''} + p'(r)_{\Omega''_{x, y}2}
 \end{align}
+\begin{figure}[H]
+    \begin{center}
+        \includegraphics[width=10cm]{../img/omega_xy_1.png}
+        \caption{$\Omega''_{x, y}$の領域の分割}
+        \label{fig:omega}
+    \end{center}
+\end{figure}
+
+$p'(r)_{\Omega''_{x,y}1'}$は,
 \begin{align}
 p'(r)_{\Omega''_{x,y}1'} &= \int^{r}_{0}\int^{r}_{0}\mathrm{d}x\mathrm{d}y\ x\sqrt{r^{2}-x^{2}} + y \sqrt{r^{2} -y^{2}} + \frac{1}{2}r^{2}\left( 2\pi -2\arccos\frac{x}{r} -2\arccos\frac{y}{r} \right) \nonumber \\
 &= r\int^{r}_{0}\mathrm{d}x\ \left\{x\sqrt{r^{2}-x^{2}} - r^{2}\arccos\frac{x}{r} \right\} + r\int^{r}_{0}\mathrm{d}x\ \left\{x\sqrt{r^{2}-x^{2}} - r^{2}\arccos\frac{x}{r} \right\} + \pi r^{2}\cdot r^{2}\nonumber \\
 &= r\left( \frac{r^{3}}{3} -r^{3} \right) + r\left( \frac{r^{3}}{3} -r^{3} \right) + \pi r^{4}\nonumber \\
-&=  \left(\pi -\frac{4}{3}\right)r^{4}
+&=  \left(\pi -\frac{4}{3}\right)r^{4}\label{eq:e12}
 \end{align}
+$p'(r)_{\Omega''_{x,y}1''}$は,
 \begin{align}
 p'(r)_{\Omega''_{x,y}1''} &= \int^{r}_{0}\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}x\mathrm{d}y\ \left[ x\sqrt{r^{2}-x^{2}} + y \sqrt{r^{2} -y^{2}} + r^{2}\left(\pi -\arccos\frac{x}{r} -\arccos\frac{y}{r}\right) \right]\nonumber \\
 &= \int^{r}_{0}\mathrm{d}x\left[ \left\{ x\sqrt{r^{2}-x^{2}} + r^{2}\pi -r^{2}\arccos\frac{x}{r} \right\}\sqrt{r^{2}-x^{2}} \right. \nonumber\\
@@ -108,7 +127,7 @@ p'(r)_{\Omega''_{x,y}1''} &= \int^{r}_{0}\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}
 &= \int^{r}_{0}\mathrm{d}x \left[-\frac{4}{3}x^{3} + 2r^{2}x - \frac{2}{3}r^{3} + \frac{\pi}{2}r^{2}\sqrt{r^{2}-x^{2}} \right]\nonumber \\
 &= \left[ -\frac{4}{3}\frac{x^{4}}{4} + r^{2}x^{2} - \frac{2}{3}r^{3}x \right]^{r}_{0} + \frac{\pi}{2}r^{2}\cdot \frac{1}{4}\pi r^{2}\nonumber \\
 &= -\frac{r^{4}}{3} + r^{4} -\frac{2}{3}r^{4} + \frac{\pi ^{2}}{8}r^{4}\nonumber \\
-&= \frac{\pi^{2}}{8}r^{4}
+&= \frac{\pi^{2}}{8}r^{4}\label{eq:e13}
 \end{align}
 
 NOTE1:
@@ -130,6 +149,8 @@ r^{2}\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}y\ \arccos \frac{y}{r} &= r^{2}\int^
 &= r^{3}\left[ \frac{\sqrt{r^{2}-x^{2}}}{r}\left( \frac{\pi}{2} - \arcsin \frac{x}{r} \right) - \frac{x}{r} + 1 \right]\nonumber \\
 &= r^{2}\frac{\pi}{2}\sqrt{r^{2}-x^{2}} - r^{2}\sqrt{r^{2}-x^{2}}\arccos\frac{x}{r} - r^{2}x + r^{3}
 \end{align}
+
+次に,$p'(r)_{\Omega''_{x, y}2}$は,
 \begin{align}
 p'(r)_{\Omega''_{x, y}2} &= \int^{r}_{0}\int^{r}_{0}\mathrm{d}x\mathrm{d}y\ \frac{1}{2}x\sqrt{r^{2}-x^{2}} + \frac{1}{2}y\sqrt{r^{2} -y^{2}} + xy + \frac{1}{2}r^{2}\left( 2\pi - \arccos\frac{x}{r} - \arccos\frac{y}{r} - \frac{\pi}{2} \right)\nonumber \\
 &= \int^{r}_{0}\mathrm{d}x\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}y\ \frac{1}{2}x\sqrt{r^{2}-x^{2}} + \frac{1}{2}y\sqrt{r^{2} -y^{2}} + xy + \frac{1}{2}r^{2}\left( 2\pi - \arccos\frac{x}{r} - \arccos\frac{y}{r} - \frac{\pi}{2} \right)\nonumber \\
@@ -140,17 +161,20 @@ p'(r)_{\Omega''_{x, y}2} &= \int^{r}_{0}\int^{r}_{0}\mathrm{d}x\mathrm{d}y\ \fra
 &= \int^{r}_{0}\mathrm{d}x\left[- \frac{7}{6}x^{3} - \frac{r^{3}}{3} + \frac{3}{2}r^{2}x + \frac{\pi}{2}r^{2}\sqrt{r^{2}-x^{2}} \right]\nonumber \\
 &= -\frac{7}{24}r^{4} - \frac{r^{4}}{3} + \frac{3}{4}r^{4} + \frac{\pi}{2}r^{2}\cdot \frac{\pi}{4}r^{2}\nonumber \\
 &= \left( - \frac{7}{24} - \frac{1}{3} + \frac{3}{4} + \frac{\pi^{2}}{8}\right)r^{4}\nonumber \\
-&= \left( \frac{\pi^{2}}{8} + \frac{1}{8} \right)r^{4}
+&= \left( \frac{\pi^{2}}{8} + \frac{1}{8} \right)r^{4}\label{eq:e14}
 \end{align}
+となる。
+
+したがって,式(\ref{eq:e12}),(\ref{eq:e13}),(\ref{eq:e14})の結果から$p'(r)_{\Omega''_{i,j}}$は
 \begin{align}
 p'(r)_{\Omega''_{i,j}} &= p'(r)_{\Omega''_{x, y}}\nonumber \\
 &= p'(r)_{\Omega''_{x, y}1}  +p'(r)_{\Omega''_{x, y}2}\nonumber \\
 &= p'(r)_{\Omega''_{x, y}1'} - p'(r)_{\Omega''_{x, y}1''} + p'(r)_{\Omega''_{x, y}2}\nonumber \\
 &= \left(\pi -\frac{4}{3}\right)r^{4} - \frac{\pi^{2}}{8}r^{4} + \left( \frac{\pi^{2}}{8} + \frac{1}{8} \right)r^{4}\nonumber \\
-&= \left(\pi -\frac{29}{24}\right)r^{4}
+&= \left(\pi -\frac{29}{24}\right)r^{4}\label{eq:e15}
 \end{align}
 
-これまでの結果をすべて合わせると,
+これまでの結果(\ref{eq:e10}), (\ref{eq:e11}), (\ref{eq:e15})をすべて合わせると,
 \begin{align}
 p'(r) &= p'(r)_{\Omega''} + 4p'(r)_{\Omega''_{i}} + 4p'(r)_{\Omega''_{i,j}}\nonumber \\
 &= (1-2r)^{2}\pi r^{2} + (1-2r)r^{3}\left( 4\pi-\frac{8}{3} \right) + \left(4\pi -\frac{29}{6}\right)r^{4}\nonumber \\
