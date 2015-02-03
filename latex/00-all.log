@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  2 FEB 2015 19:22
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  3 FEB 2015 21:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -539,13 +539,9 @@ File: ../img/N_l_2.png Graphic file (type bmp)
  <../img/N_l_2.png> [32])))
 (./04-conclusion.tex [33]
 第4章
-) (./05-reference.tex [34
-
-]
-第5章
-)
+) (./05-reference.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
- [35
+ [34
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
@@ -557,10 +553,10 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
 Here is how much of TeX's memory you used:
  5853 strings out of 495129
  82301 string characters out of 6182595
- 181561 words of memory out of 5000000
+ 180561 words of memory out of 5000000
  9076 multiletter control sequences out of 15000+600000
  24185 words of font info for 110 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  29i,12n,31p,1560b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (38 pages, 117652 bytes).
+Output written on 00-all.dvi (37 pages, 117476 bytes).
