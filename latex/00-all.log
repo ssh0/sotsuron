@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  4 FEB 2015 16:42
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  4 FEB 2015 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -546,13 +546,13 @@ File: ../img/N_l_2.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 6.
+(Font)              scaled to size 9.60999pt on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 6.
+(Font)              scaled to size 9.60999pt on input line 11.
 Missing character: There is no ^^c2 in font cmr10!
 Missing character: There is no ^^be in font cmr10!
 ))
@@ -567,12 +567,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
  ) 
 Here is how much of TeX's memory you used:
- 5881 strings out of 495129
- 82581 string characters out of 6182595
- 182192 words of memory out of 5000000
- 9099 multiletter control sequences out of 15000+600000
+ 5882 strings out of 495129
+ 82599 string characters out of 6182595
+ 181192 words of memory out of 5000000
+ 9100 multiletter control sequences out of 15000+600000
  24531 words of font info for 111 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  29i,12n,31p,1560b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (38 pages, 125048 bytes).
+Output written on 00-all.dvi (38 pages, 125792 bytes).
