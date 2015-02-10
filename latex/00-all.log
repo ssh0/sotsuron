@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  9 FEB 2015 18:15
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  10 FEB 2015 16:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -266,26 +266,26 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 )) (./00-all.aux)
 \openout1 = `00-all.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
-LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 \AtBeginShipoutBox=\box46
-Package hyperref Info: Link coloring OFF on input line 19.
+Package hyperref Info: Link coloring OFF on input line 21.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -294,47 +294,55 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count116
 )
-LaTeX Info: Redefining \ref on input line 19.
-LaTeX Info: Redefining \pageref on input line 19.
-LaTeX Info: Redefining \nameref on input line 19.
+LaTeX Info: Redefining \ref on input line 21.
+LaTeX Info: Redefining \pageref on input line 21.
+LaTeX Info: Redefining \nameref on input line 21.
 
 (./00-all.out) (./00-all.out)
 \@outlinefile=\write3
 \openout3 = `00-all.out'.
 
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 22.
+(Font)              scaled to size 16.60605pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 16.60605pt on input line 22.
+(Font)              scaled to size 16.60605pt on input line 24.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 22.
+(Font)              scaled to size 11.53198pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 22.
+(Font)              scaled to size 11.53198pt on input line 24.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 22.
-LaTeX Font Info:    Try loading font information for U+msa on input line 22.
+(Font)              scaled to size 5.76599pt on input line 24.
+LaTeX Font Info:    Try loading font information for U+msa on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 22.
+LaTeX Font Info:    Try loading font information for U+msb on input line 24.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
-
 ]
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 27.
+LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 27.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 27.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 13.83836pt on input line 27.
+
 (./00-abstract.tex) [1]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 30.
+(Font)              scaled to size 23.90964pt on input line 31.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 30.
+(Font)              scaled to size 23.90964pt on input line 31.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 30.
+(Font)              scaled to size 23.90964pt on input line 31.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 23.90964pt on input line 30.
+(Font)              scaled to size 23.90964pt on input line 31.
  (./00-all.toc
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 1.
@@ -349,14 +357,14 @@ LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
 \openout4 = `00-all.toc'.
 
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 31.
+(Font)              scaled to size 9.60999pt on input line 32.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 31.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 31.
- [2
+(Font)              scaled to size 9.60999pt on input line 32.
+ [1
 
 ] (./01-introduction.tex
 第1章
@@ -375,37 +383,28 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 File: ../img/ideaspace.jpg Graphic file (type bmp)
 <../img/ideaspace.jpg>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 15.
+(Font)              scaled to size 8.64899pt on input line 27.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 8.64899pt on input line 15.
+(Font)              scaled to size 8.64899pt on input line 27.
  [3
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 6.72699pt on input line 27.
+(Font)              scaled to size 6.72699pt on input line 44.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 4.805pt on input line 27.
+(Font)              scaled to size 4.805pt on input line 44.
  [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 37.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 58.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 37.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 58.
 ) (./03-result.tex
 [5]
 第3章
 (./03-1-A.tex
-LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 1.
-LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 1.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 1.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 1.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 1.
@@ -487,9 +486,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 File: ../img/figure2.jpg Graphic file (type bmp)
  <../img/figure2.jpg> [13]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 32.
+(Font)              scaled to size 11.53198pt on input line 47.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 32.
+(Font)              scaled to size 11.53198pt on input line 47.
 ) (./03-2-B.tex [14]
 File: ../simple3/case_2.jpg Graphic file (type bmp)
  <../simple3/case_2.jpg>
@@ -512,7 +511,7 @@ File: ../img/cluster.png Graphic file (type bmp)
 File: ../img/r_phi_1.png Graphic file (type bmp)
  <../img/r_phi_1.png>
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
-(Font)              scaled to size 5.76599pt on input line 26.
+(Font)              scaled to size 5.76599pt on input line 43.
  [21]
 File: ../img/r_phi_1_power.png Graphic file (type bmp)
  <../img/r_phi_1_power.png>
@@ -531,18 +530,18 @@ File: ../img/omega_xy.jpg Graphic file (type bmp)
 [27] [28]
 File: ../img/omega_xy_1.png Graphic file (type bmp)
  <../img/omega_xy_1.png> [29] [30]
-Overfull \hbox (19.79446pt too wide) in paragraph at lines 165--165
+Overfull \hbox (19.79446pt too wide) in paragraph at lines 177--177
 [] 
  []
 
 [31]
 File: ../img/r_l.png Graphic file (type bmp)
- <../img/r_l.png>) (./03-3-3.tex
+ <../img/r_l.png>) (./03-3-3.tex [32]
 File: ../img/N_l_2.png Graphic file (type bmp)
- <../img/N_l_2.png> [32])))
-(./04-conclusion.tex [33]
+ <../img/N_l_2.png> [33])))
+(./04-conclusion.tex [34]
 第4章
-) (./05-reference.tex (./00-all.bbl [34
+) (./05-reference.tex (./00-all.bbl [35
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
@@ -555,24 +554,26 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 9.60999pt on input line 11.
 Missing character: There is no ^^c2 in font cmr10!
 Missing character: There is no ^^be in font cmr10!
-))
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 38.
- [35
+)) [36
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 38.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 46.
+ [37
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (./00-all.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 38.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 38.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 38.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 46.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 46.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
  5882 strings out of 495129
  82599 string characters out of 6182595
- 181192 words of memory out of 5000000
+ 179211 words of memory out of 5000000
  9100 multiletter control sequences out of 15000+600000
  24531 words of font info for 111 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 29i,12n,31p,1560b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 29i,12n,31p,446b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (38 pages, 128932 bytes).
+Output written on 00-all.dvi (40 pages, 130004 bytes).

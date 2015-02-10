@@ -1,7 +1,9 @@
 \subsection{解析的な計算}
-以下には,解析的な計算によってクラスターの次数などが求められないかと考えて行った計算の過程を記しておく。基本的には初等的な積分の計算を行っているのみである。
+以下には,解析的な計算によってクラスターの次数などが求められないかと考えて行った計算の過程を記しておく。
+基本的には初等的な積分の計算を行っているのみである。
 
-まず,点の分布する範囲は$\Omega = [0,1]\times [0,1]$で,この中の面積$S$の領域の中に点を見出す確率は$S$である。領域内のある点$\vec x=(x,y)$を中心として半径$r$($0 < r \le 0.5$)の領域$B(\vec x, r)$内に点を見出す確率$p(\vec x)$は,境界の影響をうけない領域($\Omega ' = \{(x,y) | r \le x \le 1-r, r \le y \le 1-r \}$)では$\pi r^{2}$であり,境界の影響を受ける領域($\Omega'' = \Omega / \Omega'$)において点を見出す確率は,領域を
+まず,点の分布する範囲は$\Omega = [0,1]\times [0,1]$で,この中の面積$S$の領域の中に点を見出す確率は$S$である。
+領域内のある点$\vec x=(x,y)$を中心として半径$r$($0 < r \le 0.5$)の領域$B(\vec x, r)$内に点を見出す確率$p(\vec x)$は,境界の影響をうけない領域($\Omega ' = \{(x,y) | r \le x \le 1-r, r \le y \le 1-r \}$)では$\pi r^{2}$であり,境界の影響を受ける領域($\Omega'' = \Omega / \Omega'$)において点を見出す確率は,領域を
 \begin{align}
 \Omega''_{x} &= \{(x,y) | 0 \le x < r, r< y < 1-r\}\nonumber \\
 \Omega''_{1-x} &= \{(x,y) | 1-r < x \le 1, r< y < 1-r\}\nonumber \\
@@ -13,6 +15,7 @@
 \Omega''_{1-x, 1-y} &= \{(x,y) | 1-r < x \le 1, 1-r < y \le 1\}\nonumber
 \end{align}
 のようにあらわして,それぞれ考えることにする(図\ref{fig:f20})。
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=10cm]{../img/omega.jpg}
@@ -22,7 +25,9 @@
 \end{figure}
 $\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},また$\Omega''_{i,j} = \{\Omega''_{x,y}, \Omega''_{1-x,y}, \Omega''_{x,1-y}, \Omega''_{1-x,1-y}\}$でまとめて書くことにして,中心の点$\vec{x}$が領域$\Omega''_{i}$にあるときに半径$r$によって作られる円の面積$p(r)_{\Omega''_{i}}$は,図\ref{fig:f21}で表すように
 \[p(r)_{\Omega''_{i}} = i \sqrt{r^{2}-i^{2}} + r^{2} \left[ \pi -\arccos \frac{i}{r} \right]\]
-として求めることができる。ここで$i$は$x$,$1-x$,$y$,$1-y$を表している。
+として求めることができる。
+ここで$i$は$x$,$1-x$,$y$,$1-y$を表している。
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=10cm]{../img/omega_x.jpg}
@@ -35,6 +40,7 @@ $\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},
 &+ \frac{1}{2}r^{2} \left\{ 2\pi -\arccos \frac{i}{r}-\arccos \frac{j}{r}-\min \left( \frac{\pi}{2}, \arccos \frac{i}{r} +\arccos \frac{j}{r} \right) \right\}
 \end{align}
 のようにあらわすことができる。
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=10cm]{../img/omega_xy.jpg}
@@ -46,7 +52,8 @@ $\Omega''_{i} = \{\Omega''_{x}, \Omega''_{1-x}, \Omega''_{y}, \Omega''_{1-y}$\},
 このようにして求めた確率$p$をすべての領域について積分した値は,領域$\Omega$から一様乱数によって一つの点を選び,その点を中心とした$r$による範囲に1つの点を見出す確率の期待値となる。
 この確率を$p'(r)$とすれば,それぞれの領域で積分をした値の和をとれば良いので,$0\le r \le 0.5$のとき
 \[p'(r) = p'(r)_{\Omega''} + 4p'(r)_{\Omega''_{i}} + 4p'(r)_{\Omega''_{i,j}}\]
-とできる。以降ではそれぞれの領域について積分を実行する。
+とできる。
+以降ではそれぞれの領域について積分を実行する。
 
 まず領域$\Omega' = [r, 1-r]\times [r , 1-r]$について積分を実行すれば,
 \begin{equation}
@@ -55,7 +62,9 @@ p'(r)_{\Omega'} = \int_{r}^{1-r} \int_{r}^{1-r}\pi r^{2}\mathrm{d}x\mathrm{d}y =
 \end{equation}
 が得られる。
 
-次に領域$\Omega''_{i}$について積分したものを考える。このときそれぞれ4つの領域は対称であるので,積分して得られた値は等しくなるため,$\Omega''_{x}$だけ考えれば良いことが分かる。
+次に領域$\Omega''_{i}$について積分したものを考える。
+このときそれぞれ4つの領域は対称であるので,積分して得られた値は等しくなるため,$\Omega''_{x}$だけ考えれば良いことが分かる。
+
 \begin{align}
 p'(r)_{\Omega'_{i}} = p'(r)_{\Omega'_{x}} &= \int_{0}^{r} \int_{r}^{1-r}\mathrm{d}x\mathrm{d}y\ \underline{x\sqrt{r^{2}-x^{2}}} + r^{2}\left[\pi - \underline{\arccos\frac{x}{r}}\right]\nonumber \\
 &= (1-2r)\left\{ \frac{r^{3}}{3} + r^{2}\pi\cdot r - r^{2}\cdot r \right\}\nonumber \\
@@ -96,7 +105,8 @@ $t = \arccos x$であるから,
 \end{align}
 と計算できる。
 
-次に,$p'(r)_{\Omega''_{i,j}}$を図\ref{fig:omega}のように分解してそれぞれ計算する。領域$\Omega''_{x, y}1'$は$\Omega''_{x,y}$と同じ領域であり,$\Omega''_{x, y}1''$は$\Omega''_{x,y}2$と同じ積分領域である。
+次に,$p'(r)_{\Omega''_{i,j}}$を図\ref{fig:omega}のように分解してそれぞれ計算する。
+領域$\Omega''_{x, y}1'$は$\Omega''_{x,y}$と同じ領域であり,$\Omega''_{x, y}1''$は$\Omega''_{x,y}2$と同じ積分領域である。
 \begin{align}
 p'(r)_{\Omega''_{i,j}} &= p'(r)_{\Omega''_{x, y}}\nonumber \\
 &= p'(r)_{\Omega''_{x, y}1}  +p'(r)_{\Omega''_{x, y}2}\nonumber \\
@@ -130,9 +140,10 @@ p'(r)_{\Omega''_{x,y}1''} &= \int^{r}_{0}\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}
 &= \frac{\pi^{2}}{8}r^{4}\label{eq:e13}
 \end{align}
 
-NOTE1:
+NOTE1:\\
 $y=r\cos \theta$とおく。
 $y$の積分領域$[0, \sqrt{r^{2}-x^{2}}]$は$\theta$の範囲としては$[\pi/2, \theta' = \arcsin(x/r)]$となる。
+
 
 \begin{align}
 \int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}y\ y\sqrt{r^{2}-y^{2}} &= \int^{\theta'}_{\frac{\pi}{2}}-r^{3}\sin^{2}\theta\ \cos\theta \mathrm{d}\theta\nonumber \\
@@ -141,8 +152,9 @@ $y$の積分領域$[0, \sqrt{r^{2}-x^{2}}]$は$\theta$の範囲としては$[\pi
 &= \frac{r^{3}}{3} - \frac{x^{3}}{3}
 \end{align}
 
-NOTE2:
+NOTE2:\\
 $t = x/r$とおいて積分する。
+
 \begin{align}
 r^{2}\int^{\sqrt{r^{2}-x^{2}}}_{0}\mathrm{d}y\ \arccos \frac{y}{r} &= r^{2}\int^{\frac{\sqrt{r^{2}-x^{2}}}{r}}_{0}r\mathrm{d}t\ \arccos t\nonumber \\
 &= r^{3}\left[ t\arccos t - \sqrt{1-t^{2}} \right]^{\frac{\sqrt{r^{2}-x^{2}}}{r}}_{0}\nonumber \\
@@ -184,9 +196,18 @@ p'(r) &= p'(r)_{\Omega''} + 4p'(r)_{\Omega''_{i}} + 4p'(r)_{\Omega''_{i,j}}\nonu
 \end{align}
 を得る。
 
-図\ref{fig:f23}に$r$を$0.01$から$0.5$まで変えたとき,領域$\Omega$上に選ばれた1つの点からいくつのエッジが結ばれるか,すなわちその点の次数の期待値を求め,この試行を100回繰り返して平均をとったときのグラフを示す。このときの値はグラフでは青色の曲線であらわされている。一方,先程までの議論の結果として,$\Omega$上にとった1つの点のまわりの$r$による範囲に他の点が存在する確率の期待値は式(\ref{eq:e5})から,
+図\ref{fig:f23}に$r$を$0.01$から$0.5$まで変えたとき,領域$\Omega$上に選ばれた1つの点からいくつのエッジが結ばれるか,すなわちその点の次数の期待値を求め,この試行を100回繰り返して平均をとったときのグラフを示す。
+このときの値はグラフでは青色の曲線であらわされている。
+一方,先程までの議論の結果として,$\Omega$上にとった1つの点のまわりの$r$による範囲に他の点が存在する確率の期待値は式(\ref{eq:e5})から,
 \[p'(r) = \frac{1}{2}r^{4} -\frac{8}{3}r^{3} + \pi r^{2}\]
-で表すことができた。よって,一番はじめのモデルで数直線上で考えたときと同じように,次数の期待値は二項分布$B(k,p'(r))$で表すことができるから,$\Omega$全体にある点の個数を$M$とすると,ある$r'$における平均次数は$p'(r')(M-1)$で表せる。グラフ上では緑色の曲線で示された部分がそれである。このときの分散$\sigma^{2}$は,$p'(r')(1-p'(r'))M$である。この分散は1回の試行に関するものであったので,さらに100回の試行を行った今回の偏差$\sigma'$は$\sigma/\sqrt{100}$である。この範囲を示したものが,グラフの中の半透明の緑で表された範囲である。このグラフから,解析的に計算した結果が,実際に測った量とよく一致していることが分かる。
+で表すことができた。
+よって,一番はじめのモデルで数直線上で考えたときと同じように,次数の期待値は二項分布$B(k,p'(r))$で表すことができるから,$\Omega$全体にある点の個数を$M$とすると,ある$r'$における平均次数は$p'(r')(M-1)$で表せる。
+グラフ上では緑色の曲線で示された部分がそれである。
+このときの分散$\sigma^{2}$は,$p'(r')(1-p'(r'))M$である。
+この分散は1回の試行に関するものであったので,さらに100回の試行を行った今回の偏差$\sigma'$は$\sigma/\sqrt{100}$である。
+この範囲を示したものが,グラフの中の半透明の緑で表された範囲である。
+このグラフから,解析的に計算した結果が,実際に測った量とよく一致していることが分かる。
+
 \begin{figure}[H]
     \begin{center}
         \includegraphics[width=10cm]{../img/r_l.png}
