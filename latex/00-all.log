@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  10 FEB 2015 17:13
+This is e-pTeX, Version 3.1415926-p3.4-110825-2.6 (utf8.euc) (TeX Live 2013/Debian) (format=platex 2014.4.21)  2 MAR 2015 07:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -545,13 +545,13 @@ File: ../img/N_l_2.png Graphic file (type bmp)
 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 17.
 LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 11.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 11.
+(Font)              scaled to size 9.60999pt on input line 17.
 Missing character: There is no ^^c2 in font cmr10!
 Missing character: There is no ^^be in font cmr10!
 )) [36
@@ -565,6 +565,10 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 46.
  (./00-all.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 46.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 46.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 46.
  ) 
 Here is how much of TeX's memory you used:
@@ -576,4 +580,4 @@ Here is how much of TeX's memory you used:
  85 hyphenation exceptions out of 8191
  29i,12n,31p,446b,454s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on 00-all.dvi (40 pages, 130104 bytes).
+Output written on 00-all.dvi (40 pages, 130228 bytes).
